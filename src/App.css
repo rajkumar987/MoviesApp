@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+.movie-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 100px;
+}
+.movie-card {
+  width: 90px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .movie-card {
+    width: 255px;
+    height: 170px;
+  }
+}
